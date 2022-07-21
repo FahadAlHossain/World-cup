@@ -63,6 +63,9 @@ body {
     margin: 0;
     font-size: 15px;
 }
+.button:hover{
+    background-image: linear-gradient(red,orange);
+}
 
 .fa-chevron-right {
     padding-left: 6px;
@@ -202,7 +205,7 @@ span {
     font-size: 30px;
 }
 
-/* Mobile Device */
+/* Mobile Device iphone-XR */
 
 @media only screen and (max-width:688px) {
     .banner-img {
@@ -222,33 +225,100 @@ span {
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .banner-img img{
+
+    .banner-img img {
         width: 78%;
         padding-left: 50px;
     }
-    .button{
+
+    .button {
         margin-right: 50px;
         font-size: 20px;
         padding: 10px;
     }
-    .link-transfer{
+
+    .link-transfer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .links {
+        border: 0;
+        background-color: white;
+    }
+
+    .link-button a {
+        border: 1px solid hsla(0, 0%, 50%, 0.507);
+    }
+
+    .transfer-slides {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 120px;
+    }
+}
+
+/* Tablet device */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .banner-img h1{
+        font-size: 40px;
+    }
+    .banner-img p {
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .button{
+        font-size: 20px;
+    }
+    .banner-img img{
+        width: 60%;
+        padding-left: 5px;
     }
     .links{
         border: 0;
         background-color: white;
     }
+    .link-button{
+        display: flex;
+    }
     .link-button a{
         border: 1px solid hsla(0, 0%, 50%, 0.507);
+        font-size: 25px;
+    }
+    .link-transfer{
+        display: grid;
     }
     .transfer-slides{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .footer{
+    .invisible{
+        visibility: hidden;
+    }
+    .special-button{
+        padding: 12px 15px;
+        text-align: center;
+        width: 100px;
+        height: 30px;
+        margin: 0 80%;
+        margin-top: 40px;
+    }
+    .foot{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 120px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .special-button{
+        display: none;
+        visibility: hidden;
     }
 }
